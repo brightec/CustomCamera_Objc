@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-LO-ZlW">
+                                <rect key="frame" x="223.5" y="260" width="153" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebo-7s-1ya">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="30"/>
+                                        <state key="normal" title="Show Native Camera"/>
+                                        <connections>
+                                            <action selector="showNativeCameraButtonWasTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWA-Vx-1Pj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIy-8k-O5Q">
+                                        <rect key="frame" x="0.0" y="50" width="153" height="30"/>
+                                        <state key="normal" title="Show Custom Camera"/>
+                                        <connections>
+                                            <action selector="showCustomCameraButtonWasTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkw-zf-2rd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ebo-7s-1ya" firstAttribute="leading" secondItem="pOU-LO-ZlW" secondAttribute="leading" id="9QB-5s-wQe"/>
+                                    <constraint firstItem="uIy-8k-O5Q" firstAttribute="leading" secondItem="pOU-LO-ZlW" secondAttribute="leading" id="TvB-jm-aYI"/>
+                                    <constraint firstItem="ebo-7s-1ya" firstAttribute="top" secondItem="pOU-LO-ZlW" secondAttribute="top" id="bSJ-0d-ODJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uIy-8k-O5Q" secondAttribute="bottom" id="dJh-bt-cRD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ebo-7s-1ya" secondAttribute="trailing" id="deo-r7-DsA"/>
+                                    <constraint firstAttribute="trailing" secondItem="uIy-8k-O5Q" secondAttribute="trailing" id="ePM-4C-p21"/>
+                                    <constraint firstItem="uIy-8k-O5Q" firstAttribute="top" secondItem="ebo-7s-1ya" secondAttribute="bottom" constant="20" id="qpc-fx-hcQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pOU-LO-ZlW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gSK-iG-CPg"/>
+                            <constraint firstItem="pOU-LO-ZlW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nR7-pU-rqe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
